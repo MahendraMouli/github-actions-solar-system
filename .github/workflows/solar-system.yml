@@ -54,7 +54,7 @@ jobs:
           name: Installing the nodeJS dependencies
 
         - name: Run Code-Coverage Command
-          run: npm run code-coverage
+          run: npm run coverage
           
 
 
