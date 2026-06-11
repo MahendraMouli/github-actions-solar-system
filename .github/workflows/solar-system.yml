@@ -73,9 +73,9 @@ jobs:
             retention-days: 5  
 
     docker:
-      - runs-on: ubuntu-latest
-      - needs: ['unit-testing', 'code-coverage']
-      - steps:
+        runs-on: ubuntu-latest
+        needs: ['unit-testing', 'code-coverage']
+        steps:
           - name: Checkout the repo
             uses: action/checkout@v6
 
