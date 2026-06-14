@@ -98,7 +98,7 @@ jobs:
       environment: development
       steps:
         - uses: helm/kind-action@v1
-          run: |
+        - run: |
             sleep 10
             kubectl -n kube-system get pod
             set +e
