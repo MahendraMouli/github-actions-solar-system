@@ -81,7 +81,7 @@ jobs:
 
           - name: Apply lower case to the repo owner
             run: |
-               GITHUB_REPO_OWNER= ${{ github.repository_owner }}
+               GITHUB_REPO_OWNER= "${{ github.repository_owner }}"
                echo "REPO_OWNER=${GITHUB_REPO_OWNER,,}" >> $GITHUB_ENV
 
           - name: Docker Login
